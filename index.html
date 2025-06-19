@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        <div class="counter">000</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">EcoSphere</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#stats">Analytics</a>
+                <a href="#testimonials">Clients</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="cta-btn">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="review-bar">
+
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <span>4.8 rating on Google</span>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <span>350+ reviews on Xero</span>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <span>550+ reviews on G2</span>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <span>4.9 rating on Trustpilot</span>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <span>500+ enterprises trust us</span>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="keyword" data-cards="track">Track</span> emissions, 
+                <span class="keyword" data-cards="reports">generate reports</span>, 
+                <span class="keyword" data-cards="dashboards">build dashboards</span>, 
+                and drive smarter decisions with AI.
+            </h1>
+            <p class="hero-subtitle">Sustainability simplified. Insights amplified.</p>
+            
+            <div class="hero-cta">
+                <button class="cta-primary">Start Free Trial</button>
+                <button class="cta-secondary">Watch Demo</button>
+            </div>
+        </div>
+
+        <!-- Background Elements -->
+        <div class="hero-background">
+            <div class="gradient-circle circle-1"></div>
+            <div class="gradient-circle circle-2"></div>
+            <div class="gradient-circle circle-3"></div>
+        </div>
+
+        <!-- Data Cards -->
+        <div class="data-cards">
+            <!-- Track Cards -->
+            <div class="data-card track-card" data-type="track">
+                <div class="card-header">
+                    <h3>Real-time Emissions</h3>
+                    <span class="card-icon">📊</span>
+                </div>
+                <div class="card-content">
+                    <div class="metric">
+                        <span class="value">2,847</span>
+                        <span class="unit">tCO₂e</span>
+                    </div>
+                    <div class="trend positive">↑ 12% this month</div>
+                </div>
+            </div>
+
+            <div class="data-card track-card" data-type="track">
+                <div class="card-header">
+                    <h3>Energy Consumption</h3>
+                    <span class="card-icon">⚡</span>
+                </div>
+                <div class="card-content">
+                    <div class="metric">
+                        <span class="value">156,432</span>
+                        <span class="unit">kWh</span>
+                    </div>
+                    <div class="trend negative">↓ 8% this week</div>
+                </div>
+            </div>
+
+            <div class="data-card track-card" data-type="track">
+                <div class="card-header">
+                    <h3>Carbon Intensity</h3>
+                    <span class="card-icon">🌱</span>
+                </div>
+                <div class="card-content">
+                    <div class="metric">
+                        <span class="value">0.42</span>
+                        <span class="unit">kgCO₂/kWh</span>
+                    </div>
+                    <div class="trend positive">↑ 5% improvement</div>
+                </div>
+            </div>
+
+            <!-- Reports Cards -->
+            <div class="data-card reports-card" data-type="reports">
+                <div class="card-header">
+                    <h3>Monthly Report</h3>
+                    <span class="card-icon">📈</span>
+                </div>
+                <div class="card-content">
+                    <div class="report-status">
+                        <span class="status-badge">Generated</span>
+                        <span class="date">Dec 2024</span>
+                    </div>
+                    <div class="report-summary">45 pages • 12 insights</div>
+                </div>
+            </div>
+
+            <div class="data-card reports-card" data-type="reports">
+                <div class="card-header">
+                    <h3>Compliance Report</h3>
+                    <span class="card-icon">📋</span>
+                </div>
+                <div class="card-content">
+                    <div class="report-status">
+                        <span class="status-badge pending">Pending</span>
+                        <span class="date">Q4 2024</span>
+                    </div>
+                    <div class="report-summary">Due in 5 days</div>
+                </div>
+            </div>
+
+            <div class="data-card reports-card" data-type="reports">
+                <div class="card-header">
+                    <h3>ESG Summary</h3>
+                    <span class="card-icon">🎯</span>
+                </div>
+                <div class="card-content">
+                    <div class="report-status">
+                        <span class="status-badge">Ready</span>
+                        <span class="date">Annual</span>
+                    </div>
+                    <div class="report-summary">Executive summary</div>
+                </div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="data-card dashboard-card" data-type="dashboards">
+                <div class="card-header">
+                    <h3>Executive Dashboard</h3>
+                    <span class="card-icon">📊</span>
+                </div>
+                <div class="card-content">
+                    <div class="dashboard-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">KPIs</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Widgets</span>
+                            <span class="stat-value">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-card dashboard-card" data-type="dashboards">
+                <div class="card-header">
+                    <h3>Operations View</h3>
+                    <span class="card-icon">⚙️</span>
+                </div>
+                <div class="card-content">
+                    <div class="dashboard-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Alerts</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Active</span>
+                            <span class="stat-value">24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-card dashboard-card" data-type="dashboards">
+                <div class="card-header">
+                    <h3>Analytics Hub</h3>
+                    <span class="card-icon">📈</span>
+                </div>
+                <div class="card-content">
+                    <div class="dashboard-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Models</span>
+                            <span class="stat-value">15</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Accuracy</span>
+                            <span class="stat-value">94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Comparison Carousel -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2>Transform Your Carbon Management</h2>
+            <div class="comparison-carousel">
+                <div class="comparison-item">
+                    <div class="comparison-image before" data-default="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=500" data-hover="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=500">
+                        <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Before EcoSphere">
+                        <button class="add-dashboard">Add to Dashboard +</button>
+                        <div class="image-label">Manual Spreadsheets</div>
+                    </div>
+                    <div class="comparison-image after" data-default="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=500" data-hover="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=500">
+                        <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=500" alt="After EcoSphere">
+                        <button class="add-dashboard">Add to Dashboard +</button>
+                        <div class="image-label">AI-Powered Analytics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Kits Section -->
+    <section class="brand-kits">
+        <div class="container">
+            <div class="glowing-card">
+                <h3>Brand Kits</h3>
+                <div class="kit-options">
+                    <label class="kit-option">
+                        <input type="checkbox" name="kit" value="ecorp">
+                        <span class="checkmark"></span>
+                        <div class="kit-content">
+                            <div class="kit-logo">
+                                <div class="logo-circle green"></div>
+                                <span class="kit-name">ECorp</span>
+                            </div>
+                            <span class="kit-icon">≡</span>
+                        </div>
+                    </label>
+                    <label class="kit-option">
+                        <input type="checkbox" name="kit" value="icorp">
+                        <span class="checkmark"></span>
+                        <div class="kit-content">
+                            <div class="kit-logo">
+                                <div class="logo-circle orange"></div>
+                                <span class="kit-name">ICorp</span>
+                            </div>
+                            <span class="kit-icon">≡</span>
+                        </div>
+                    </label>
+                    <label class="kit-option selected">
+                        <input type="checkbox" name="kit" value="agency" checked>
+                        <span class="checkmark"></span>
+                        <div class="kit-content">
+                            <div class="kit-logo">
+                                <div class="logo-circle red"></div>
+                                <span class="kit-name">The Agency</span>
+                            </div>
+                            <span class="kit-icon">≡</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logo Carousel -->
+    <section class="logo-carousel-section">
+        <div class="container">
+            <div class="logo-carousel">
+                <div class="logo-row top">
+                    <div class="logo-item">
+                        <div class="logo-placeholder">TechCorp Logo</div>
+                        <span>TechCorp</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-placeholder">GreenEnergy Logo</div>
+                        <span>GreenEnergy</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-placeholder">EcoTech Logo</div>
+                        <span>EcoTech</span>
+                    </div>
+                </div>
+                <div class="logo-row bottom">
+                    <div class="logo-item">
+                        <div class="logo-placeholder">SustainableCo Logo</div>
+                        <span>SustainableCo</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-placeholder">CleanPower Logo</div>
+                        <span>CleanPower</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-placeholder">FutureGreen Logo</div>
+                        <span>FutureGreen</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-overlay">
+                <button class="meet-customers">Meet Our Customers ></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-grid">
+        <div class="container">
+            <h2>AI-Powered Sustainability Features</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Carbon Mapping</h3>
+                    <p>Visualize carbon footprint across your entire operation</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Energy Monitoring</h3>
+                    <p>Real-time energy consumption tracking and optimization</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3>AI Forecasting</h3>
+                    <p>Predict future emissions and energy usage patterns</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Advanced insights for data-driven sustainability decisions</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Tracking</h3>
+                    <p>Set and monitor sustainability targets with precision</p>
+                    <div class="feature-glow"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Dashboard</h3>
+                    <p>Access your sustainability data anywhere, anytime</p>
+                    <div class="feature-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graph Section -->
+    <section class="graph-section">
+        <div class="container">
+            <div class="graph-container">
+                <div class="graph-filters">
+                    <h3>Filter by</h3>
+                    <div class="filter-group">
+                        <label>Type</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="refurbishment">Refurbishment</button>
+                            <button class="filter-btn" data-filter="new-build">New build</button>
+                            <button class="filter-btn" data-filter="all">All</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Status</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-status="complete">Complete</button>
+                            <button class="filter-btn" data-status="estimate">Estimate</button>
+                        </div>
+                    </div>
+                    <div class="graph-key">
+                        <div class="key-item">
+                            <span class="key-line dashed"></span>
+                            <span>500 kgCO₂e/m² - Embodied Carbon Target 2030</span>
+                        </div>
+                        <div class="key-item">
+                            <span class="key-line solid"></span>
+                            <span>600 kgCO₂e/m² - Embodied Carbon Target 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph-content">
+                    <h2>EMBODIED CARBON EMISSIONS</h2>
+                    <p>Intensity measured by kgCO₂e/m²</p>
+                    <div class="bar-chart">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 45%" data-value="549"></div>
+                            <div class="bar" style="height: 23%" data-value="278"></div>
+                            <div class="bar" style="height: 87%" data-value="875"></div>
+                            <div class="bar" style="height: 61%" data-value="617"></div>
+                            <div class="bar" style="height: 50%" data-value="506"></div>
+                            <div class="bar" style="height: 4%" data-value="36"></div>
+                            <div class="bar" style="height: 18%" data-value="185"></div>
+                            <div class="bar" style="height: 19%" data-value="191"></div>
+                            <div class="bar" style="height: 12%" data-value="122"></div>
+                            <div class="bar" style="height: 55%" data-value="550"></div>
+                            <div class="bar" style="height: 88%" data-value="881"></div>
+                            <div class="bar" style="height: 53%" data-value="539"></div>
+                        </div>
+                        <div class="chart-targets">
+                            <div class="target-line" style="bottom: 50%"></div>
+                            <div class="target-line dashed" style="bottom: 60%"></div>
+                        </div>
+                    </div>
+                    <button class="download-btn">Download the data</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Managed portfolio carbon footprint</h3>
+                    <div class="stat-value">
+                        <span class="stat-number" data-target="45048">0</span>
+                        <span class="stat-unit">tCO₂e</span>
+                    </div>
+                    <div class="stat-change positive">
+                        <span>from 2019</span>
+                        <span>↑ 16%</span>
+                    </div>
+                    <div class="stat-breakdown">
+                        <div class="year-bar">
+                            <span>2022</span>
+                            <div class="bar-full"></div>
+                            <span>45,048</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2021</span>
+                            <div class="bar-partial" style="width: 32%"></div>
+                            <span>14,111</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2020</span>
+                            <div class="bar-partial" style="width: 73%"></div>
+                            <span>32,813</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2019</span>
+                            <div class="bar-partial" style="width: 86%"></div>
+                            <span>38,673</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Managed portfolio energy intensity</h3>
+                    <div class="stat-value">
+                        <span class="stat-number" data-target="123">0</span>
+                        <span class="stat-unit">kWh/m²</span>
+                    </div>
+                    <div class="stat-change negative">
+                        <span>from 2019</span>
+                        <span>↓ 22%</span>
+                    </div>
+                    <div class="stat-breakdown">
+                        <div class="year-bar">
+                            <span>2022</span>
+                            <div class="bar-full"></div>
+                            <span>123</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2021</span>
+                            <div class="bar-partial" style="width: 81%"></div>
+                            <span>128</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2020</span>
+                            <div class="bar-partial" style="width: 86%"></div>
+                            <span>135</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2019</span>
+                            <div class="bar-full"></div>
+                            <span>157</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Managed portfolio energy consumption</h3>
+                    <div class="stat-value">
+                        <span class="stat-number" data-target="47790662">0</span>
+                        <span class="stat-unit">kWh</span>
+                    </div>
+                    <div class="stat-change negative">
+                        <span>from 2019</span>
+                        <span>↓ 27%</span>
+                    </div>
+                    <div class="stat-breakdown">
+                        <div class="year-bar">
+                            <span>2022</span>
+                            <div class="bar-full"></div>
+                            <span>47,790,662</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2021</span>
+                            <div class="bar-partial" style="width: 75%"></div>
+                            <span>49,324,077</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2020</span>
+                            <div class="bar-partial" style="width: 74%"></div>
+                            <span>48,784,205</span>
+                        </div>
+                        <div class="year-bar">
+                            <span>2019</span>
+                            <div class="bar-full"></div>
+                            <span>65,198,706</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-trigger">
+                <div class="video-thumbnail">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" alt="Video thumbnail">
+                    <div class="play-button">▶</div>
+                </div>
+            </div>
+        </div>
+        <div class="video-fullscreen">
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="close-video">×</button>
+        </div>
+    </section>
+
+    <!-- Work Showcase -->
+    <section class="work-showcase">
+        <div class="showcase-content">
+            <div class="project-info">
+                <h3 class="project-name">Carbon Neutral Office</h3>
+                <p class="project-description">Complete sustainability transformation for tech company headquarters</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="project-image">
+                <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project">
+            </div>
+            <div class="project-number">
+                <span class="number-digit">0</span>
+                <span class="number-digit">1</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-header">
+            <h2 class="split-text">
+                <span class="word-left">Happy</span>
+                <span class="word-right">Clients</span>
+            </h2>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>"EcoSphere transformed our sustainability reporting. We reduced our carbon footprint by 40% in just one year."</p>
+                <div class="testimonial-author">
+                    <strong>Sarah Johnson</strong>
+                    <span>CEO, GreenTech Solutions</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"The AI insights helped us identify energy waste we never knew existed. Incredible ROI on our investment."</p>
+                <div class="testimonial-author">
+                    <strong>Michael Chen</strong>
+                    <span>Sustainability Director, InnovateCorp</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Real-time monitoring and automated reporting saved us countless hours. The platform is intuitive and powerful."</p>
+                <div class="testimonial-author">
+                    <strong>Emma Rodriguez</strong>
+                    <span>Environmental Manager, FutureTech</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"EcoSphere's predictive analytics helped us stay ahead of compliance requirements and reduce costs significantly."</p>
+                <div class="testimonial-author">
+                    <strong>David Park</strong>
+                    <span>Operations Manager, CleanTech Inc</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"The dashboard visualization makes complex data accessible to our entire team. Game-changing platform."</p>
+                <div class="testimonial-author">
+                    <strong>Lisa Wang</strong>
+                    <span>Sustainability Lead, EcoVentures</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EcoSphere</h3>
+                    <p>Carbon intelligence for a sustainable future</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">API</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoSphere. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
