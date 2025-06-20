@@ -12,7 +12,6 @@
 - 💡 **Theme Toggle** – Seamlessly switch between light and dark mode
 - 📈 **Interactive Animations** – Hover-driven cards, keyword highlights, and responsive UI
 - ⚙️ **Modern Stack** – HTML5, CSS3, and JavaScript with clean, modular structure
-- **AI Used** - Bolt.new, Chatgpt
 
 ---
 
