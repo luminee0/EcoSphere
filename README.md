@@ -6,12 +6,12 @@
 
 ## 🚀 Features
 
-- 🌱 **AI-Powered Carbon Tracking** – Real-time emission monitoring and energy usage analytics
-- 📊 **Custom Dashboards** – Add, remove, and compare key environmental metrics
-- 🎯 **Smart Comparison Carousel** – Visual side-by-side transformation insights
-- 💡 **Theme Toggle** – Seamlessly switch between light and dark mode
-- 📈 **Interactive Animations** – Hover-driven cards, keyword highlights, and responsive UI
-- ⚙️ **Modern Stack** – HTML5, CSS3, and JavaScript with clean, modular structure
+- 🌱 **AI-Powered Carbon Tracking** – Real-time emission monitoring and energy usage analytics.
+- 📊 **Custom Dashboards** – Add, remove, and compare key environmental metrics.
+- 🎯 **Smart Comparison Carousel** – Visual side-by-side transformation insights.
+- 💡 **Theme Toggle** – Seamlessly switch between light and dark mode.
+- 📈 **Interactive Animations** – Hover-driven cards, keyword highlights, and responsive UI.
+- ⚙️ **Modern Stack** – HTML5, CSS3, and JavaScript with clean, modular structure.
 
 ---
 
